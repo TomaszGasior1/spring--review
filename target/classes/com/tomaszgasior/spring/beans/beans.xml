@@ -7,5 +7,8 @@
 	<bean id="person" class="com.tomaszgasior.spring.Person">
 		<constructor-arg value="776" name="id"></constructor-arg>
 		<constructor-arg value="Mary" name="name"></constructor-arg>
+		<property name="taxId">
+		<value>321</value>
+		</property>
 	</bean>
 </beans>
