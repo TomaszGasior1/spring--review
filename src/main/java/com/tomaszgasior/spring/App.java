@@ -13,7 +13,7 @@ public class App {
 		Person person = (Person) context.getBean("person");
 		person.speak();
 
-		
+		System.out.println(person);
 		
 		((ClassPathXmlApplicationContext)context).close();
 	}
