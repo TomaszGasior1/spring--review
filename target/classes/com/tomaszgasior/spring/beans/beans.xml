@@ -4,7 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="person" class="com.tomaszgasior.spring.Person">
+	<bean id="person" class="com.tomaszgasior.spring.Person"
+		scope="prototype">
 		<constructor-arg value="776" name="id"></constructor-arg>
 		<constructor-arg value="Mary" name="name"></constructor-arg>
 		<property name="taxId">
