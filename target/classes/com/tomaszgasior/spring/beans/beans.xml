@@ -8,7 +8,12 @@
 		<constructor-arg value="776" name="id"></constructor-arg>
 		<constructor-arg value="Mary" name="name"></constructor-arg>
 		<property name="taxId">
-		<value>321</value>
+			<value>321</value>
 		</property>
+		<property name="adress" ref="adress"></property>
+	</bean>
+	<bean id="adress" class="com.tomaszgasior.spring.Adress">
+		<constructor-arg name="street" value="1 Church Lane"></constructor-arg>
+		<constructor-arg name="postcode" value="9876"></constructor-arg>
 	</bean>
 </beans>

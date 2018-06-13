@@ -4,8 +4,8 @@ public class Person {
 
 	private int id;
 	private String name;
-
 	private int taxId;
+	private Adress adress;
 
 	public void setTaxId(int taxId) {
 		this.taxId = taxId;
@@ -20,10 +20,13 @@ public class Person {
 		this.name = name;
 	}
 
+	public void setAdress(Adress adress) {
+		this.adress = adress;
+	}
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + "]";
+		return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + ", adress=" + adress + "]";
 	}
 
 	public void speak() {
