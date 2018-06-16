@@ -13,7 +13,18 @@
 	<bean class="com.tomaszgasior.spring.autowiring.ConsoleWriter"
 		id="consoleWriter">
 	</bean>
+<<<<<<< HEAD
 	<bean class="com.tomaszgasior.spring.autowiring.FileWriter"
 		id="fileWriter">
 	</bean>
+=======
+	
+	<bean id="adress2" class="com.tomaszgasior.spring.Adress"
+		p:street="23 Street" p:postcode="2211">
+
+	
+	
+	</bean>
+
+>>>>>>> 0fd911beae82ebb8dfd0b1b2fde34ac0f4b36a69
 </beans>
