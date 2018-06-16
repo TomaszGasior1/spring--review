@@ -3,7 +3,7 @@ package com.tomaszgasior.spring;
 public class Adress {
 
 	private String street;
-	private Int postcode;
+	private String postcode;
 	
 	public Adress(){
 		

@@ -31,8 +31,11 @@
 		<constructor-arg name="postcode" value="9876"></constructor-arg>
 	</bean>
 	
-	<bean id="adress2" class="com.tomaszgasior.spring.Adress" p:street="23 Street" p:postcode="2211">
-		
-	</bean>
+	<bean id="adress2" class="com.tomaszgasior.spring.Adress"
+		p:street="23 Street" p:postcode="2211">
+
 	
+	
+	</bean>
+
 </beans>
