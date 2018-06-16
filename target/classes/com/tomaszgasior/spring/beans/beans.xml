@@ -6,33 +6,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="person" class="com.tomaszgasior.spring.Person"
-		scope="singleton">
-		<constructor-arg value="776" name="id"></constructor-arg>
-		<constructor-arg value="Mary" name="name"></constructor-arg>
-		<property name="taxId">
-			<value>321</value>
-		</property>
-		<property name="adress" ref="adress"></property>
-	</bean>
 
-	<bean id="person2" class="com.tomaszgasior.spring.Person"
-		scope="singleton">
-		<constructor-arg value="565" name="id"></constructor-arg>
-		<constructor-arg value="Mike" name="name"></constructor-arg>
-		<property name="taxId">
-			<value>321</value>
-		</property>
-		<property name="adress" ref="adress"></property>
+	<bean class="com.tomaszgasior.spring.autowiring.Logger"
+		autowire="byType" id="logger">
 	</bean>
-
-	<bean id="adress" class="com.tomaszgasior.spring.Adress">
-		<constructor-arg name="street" value="1 Church Lane"></constructor-arg>
-		<constructor-arg name="postcode" value="9876"></constructor-arg>
+	<bean class="com.tomaszgasior.spring.autowiring.ConsoleWriter"
+		id="consoleWriter">
 	</bean>
-	
-	<bean id="adress2" class="com.tomaszgasior.spring.Adress" p:street="23 Street" p:postcode="2211">
-		
+	<bean class="com.tomaszgasior.spring.autowiring.FileWriter"
+		id="fileWriter">
 	</bean>
-	
 </beans>
