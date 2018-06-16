@@ -2,13 +2,13 @@ package com.tomaszgasior.spring.autowiring;
 
 public class Logger {
 	
-	private ConsoleWriter consoleWriter;
-	private FileWriter fileWriter;
+	private Writer consoleWriter;
+	private Writer fileWriter;
 	
-	public void setConsoleWriter(ConsoleWriter consoleWriter){
+	public void setConsoleWriter(Writer consoleWriter){
 		this.consoleWriter = consoleWriter;
 	}
-	public void setFileWriter(FileWriter fileWriter){
+	public void setFileWriter(Writer fileWriter){
 		this.fileWriter = fileWriter;
 	}
 	

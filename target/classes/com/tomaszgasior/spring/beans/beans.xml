@@ -8,7 +8,7 @@
 
 
 	<bean class="com.tomaszgasior.spring.autowiring.Logger"
-		autowire="byType" id="logger">
+		autowire="byName" id="logger">
 	</bean>
 	<bean class="com.tomaszgasior.spring.autowiring.ConsoleWriter"
 		id="consoleWriter">
